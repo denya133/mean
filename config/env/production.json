@@ -1,5 +1,5 @@
 {
-    "db": "mongodb://localhost/mean",
+    "db": "mongodb://192.168.2.20/mean",
     "app": {
         "name": "MEAN - A Modern Stack - Production"
     },
