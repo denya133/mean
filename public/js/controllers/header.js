@@ -7,5 +7,11 @@ angular.module('mean.system').controller('HeaderController', ['$scope', 'Global'
     }, {
         "title": "Create New Article",
         "link": "articles/create"
+    }, {
+        "title": "Projects",
+        "link": "projects"
+    }, {
+        "title": "Create New Project",
+        "link": "projects/create"
     }];
 }]);
