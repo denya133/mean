@@ -3,6 +3,25 @@ angular.module('mean.system').controller('HeaderController', ['$scope', 'Global'
 
     $scope.menu = [
     {
+        "title": "Tasks",
+        "link": "tasks",
+        "arr": [
+            {
+                "title": "List",
+                "link": "tasks"
+            }
+        ]        
+    }, {
+        "title": "Component",
+        "link": "component",
+        "arr": [
+            {
+                "title": "Show",
+                "link": "component"
+            }
+        ]        
+    },
+    {
         "title": "Articles",
         "link": "articles",
         "arr": [
@@ -14,8 +33,7 @@ angular.module('mean.system').controller('HeaderController', ['$scope', 'Global'
                 "title": "Create New Article",
                 "link": "articles/create"  
             }
-        ]
-        
+        ]        
     }, {
         "title": "Projects",
         "link": "projects",

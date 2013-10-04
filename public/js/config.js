@@ -2,6 +2,9 @@
 window.app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
+        when('/tasks', {
+            templateUrl: 'views/tasks/list.html'
+        }).
         when('/articles', {
             templateUrl: 'views/articles/list.html'
         }).
@@ -34,6 +37,9 @@ window.app.config(['$routeProvider',
         }).
         when('/contacts/:contactId/edit', {
             templateUrl: 'views/contacts/edit.html'
+        }).
+        when('/component', {
+            templateUrl: 'views/component/show.html'
         }).
         when('/', {
             templateUrl: 'views/index.html'
