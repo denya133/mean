@@ -1,4 +1,4 @@
-angular.module('mean.components', []).
+angular.module('mean.components').
   directive('tabs', function() {
     return {
       restrict: 'E',
@@ -45,19 +45,13 @@ angular.module('mean.components', []).
         '</div>',
       replace: true
     };
-  });
-
-'use strict';
-
-/* Directives */
-
-
-angular.module('contactPath.directives', []).
-    directive('appVersion', ['version', function (version) {
+  }).
+  directive('appVersion', ['version', function (version) {
     return function (scope, elm, attrs) {
         elm.text(version);
     };
-}]).directive('integer', function () {
+  }]).
+  directive('integer', function () {
         return {
             require:'ngModel',
             link:function (scope, elm, attrs, ctrl) {
@@ -72,4 +66,4 @@ angular.module('contactPath.directives', []).
                 });
             }
         };
-    });
+  });

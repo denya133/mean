@@ -26,6 +26,15 @@ window.app.config(['$routeProvider',
         when('/contacts', {
             templateUrl: 'views/contacts/list.html'
         }).
+        when('/contacts/create', {
+            templateUrl: 'views/contacts/create.html'
+        }).
+        when('/contacts/:contactId/view', {
+            templateUrl: 'views/contacts/view.html'
+        }).
+        when('/contacts/:contactId/edit', {
+            templateUrl: 'views/contacts/edit.html'
+        }).
         when('/', {
             templateUrl: 'views/index.html'
         }).

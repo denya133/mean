@@ -3,8 +3,15 @@
         <li>
             <a class="brand" href="/">MEAN - A Modern Stack</a>
         </li>
-        <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
-            <a href="#!/{{item.link}}">{{item.title}}</a>
+        <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}" class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                {{item.title}} <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li data-ng-repeat="subitem in item.arr" data-ng-show="global.user">
+                    <a href="#!/{{subitem.link}}">{{subitem.title}}</a>
+                </li>
+            </ul>
         </li>
     </ul>
     <ul class="nav pull-right" data-ng-hide="global.authenticated">

@@ -1,11 +1,8 @@
-'use strict';
-
-/* Services */
-
-angular.module('contactPath.services', []).
+angular.module('mean.contacts').
     value('version', '0.1').
     value('localStorage', window.localStorage).
-    service('contacts', function (localStorage, $rootScope) {
+    service("Contacts", function(localStorage, $rootScope) {
+
         var self = this;
 
         self.save = function (contact) {
@@ -106,4 +103,4 @@ angular.module('contactPath.services', []).
                 true);
 
         }
-    });
+});

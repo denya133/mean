@@ -1,13 +1,12 @@
-'use strict';
-
 /* Filters */
 
-angular.module('contactPath.filters', []).
+angular.module('mean.filters').
     filter('interpolate', ['version', function (version) {
     return function (text) {
         return String(text).replace(/\%VERSION\%/mg, version);
     }
-}]).filter('regex', function () {
+    }]).
+    filter('regex', function () {
         return function (input, field, regex) {
             var patt = new RegExp(regex, "i");
             var out = [];
